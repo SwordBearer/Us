@@ -60,7 +60,7 @@ public class AccountActivity extends BaseActivity implements
 		AccountPlugin plugin = (AccountPlugin) v.getTag();
 		Intent intent = new Intent();
 		ComponentName name = new ComponentName(plugin.packageName,
-				plugin.packageName + ".Start");
+				plugin.packageName + ".ui.Start");
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		intent.setComponent(name);
 		startActivityForResult(intent, 0);
